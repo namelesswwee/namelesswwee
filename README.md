@@ -2,7 +2,7 @@
 position: relative; 
 width: 100%; 
 height: 450px; 
-background: url(https://raw.githubusercontent.com/namelesswwee/namelesswwee/main/1.png); 
+background: url(https://raw.githubusercontent.com/namelesswwee/namelesswwee/main/44.jpg); 
 background-size: cover; 
 background-position: center; 
 border-radius: 10px; 
