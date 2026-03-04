@@ -1,33 +1,35 @@
-<!-- 顶部背景区域 -->
-<div align="center" style="
-  width: 100%;
-  height: 280px;
-  background: url(https://github.com/namelesswwee/namelesswwee/blob/main/1.png) center/cover no-repeat;
-  margin: 0;
-  padding: 0;
-  border-radius: 8px;
+<div style="
+position: relative; 
+width: 100%; 
+height: 450px; 
+background: url(https://raw.githubusercontent.com/namelesswwee/namelesswwee/main/1.png); 
+background-size: cover; 
+background-position: center; 
+border-radius: 10px; 
+overflow: hidden;
 ">
-  <!-- 中间文字 -->
-  <h1 style="
-    color: white;
-    font-size: 36px;
-    padding-top: 100px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-  ">
-    你的名字 / Hi, I'm Atrosenet
-  </h1>
-  <p style="
-    color: #eee;
-    font-size: 18px;
-    margin-top: 10px;
-  ">
-    你的简介 / 前端开发 / 热爱编程
-  </p>
+
+<div style="
+position: absolute; 
+top: 0; left: 0; right: 0; bottom: 0; 
+background: rgba(0, 0, 0, 0.4); /* 半透明遮罩，让文字更清晰 */
+padding: 40px;
+color: white;
+">
+
+<h1 align="center">Hi 👋, I'm 你的名字</h1>
+<h3 align="center">一个热爱编程的开发者</h3>
+
+<p align="center">
+这里写你的简介<br/>
+这里写你的技能<br/>
+这里写你的目标
+</p>
+
+<p align="center">
+💻 正在学习：Java / Python / 前端<br/>
+📫 邮箱：your@email.com
+</p>
+
 </div>
-
----
-
-### 👋 About Me
-- 擅长：Java、Python、前端
-- 爱好：开源、技术分享
-- 邮箱：111
+</div>
