@@ -1,16 +1,15 @@
+
+### ✅ 正确写法（直接写 HTML，不要包裹 ```html）：
+
+```html
 <div style="position: relative; width: 100%; height: 450px; border-radius: 10px; overflow: hidden; background-color: #333;">
   
-  <!-- 第 1 层：背景图片 (z-index: 0) -->
-  <!-- 如果图片链接失效，这里会显示背景色 #333，保证你不看到白屏 -->
   <img src="https://raw.githubusercontent.com/namelesswwee/namelesswwee/main/1123.jpg" 
        alt="Background" 
        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; display: block;">
 
-  <!-- 第 2 层：黑色遮罩 (z-index: 1) -->
   <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
 
-  <!-- 第 3 层：文字内容 (z-index: 2) -->
-  <!-- 使用 flex 布局确保垂直居中，防止文字被挤出视野 -->
   <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; padding: 20px; box-sizing: border-box; text-align: center;">
     
     <h1 style="margin: 0 0 10px 0; font-size: 2.2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Hi 👋, I'm 你的名字</h1>
