@@ -1,3 +1,34 @@
-<div style="width: 100%; height: 300px; background: linear-gradient(to right, red, blue); color: white; display: flex; justify-content: center; align-items: center; font-size: 2rem;">
-  测试成功！
+<div style="width: 100%; height: 450px; border-radius: 10px; overflow: hidden; background-color: #333; position: relative;">
+
+  <!-- 背景图 - 修正后的链接 -->
+  <img src="https://raw.githubusercontent.com/namelesswwee/namelesswwee/main/1123.jpg" 
+       alt="Background" 
+       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+
+  <!-- 黑色遮罩 -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
+
+  <!-- 文字内容层 -->
+  <div style="position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; padding: 20px; box-sizing: border-box; text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; height: 100%;">
+
+    <div style="font-size: 2.2rem; font-weight: bold; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
+      Hi 👋, I'm 你的名字
+    </div>
+
+    <div style="font-size: 1.3rem; font-weight: normal; opacity: 0.9; margin-bottom: 20px;">
+      一个热爱编程的开发者
+    </div>
+
+    <div style="line-height: 1.5; max-width: 80%; margin-bottom: 15px;">
+      这里写你的简介<br/>
+      这里写你的技能<br/>
+      这里写你的目标
+    </div>
+
+    <div style="font-size: 0.95rem; opacity: 0.8;">
+      💻 正在学习：Java / Python / 前端<br/>
+      📫 邮箱：your@email.com
+    </div>
+
+  </div>
 </div>
