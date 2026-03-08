@@ -1,7 +1,7 @@
 
 ### ✅ 正确写法（直接写 HTML，不要包裹 ```html）：
 
-```html
+
 <div style="position: relative; width: 100%; height: 450px; border-radius: 10px; overflow: hidden; background-color: #333;">
   
   <img src="https://raw.githubusercontent.com/namelesswwee/namelesswwee/main/1123.jpg" 
