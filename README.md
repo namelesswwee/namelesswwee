@@ -1,28 +1,31 @@
-<div style="position: relative; width: 100%; height: 450px; border-radius: 10px; overflow: hidden;">
+<div style="position: relative; width: 100%; height: 450px; border-radius: 10px; overflow: hidden; background-color: #333;">
   
-  <!-- 1. 底层图片：使用 img 标签，设置为绝对定位填满容器 -->
+  <!-- 第 1 层：背景图片 (z-index: 0) -->
+  <!-- 如果图片链接失效，这里会显示背景色 #333，保证你不看到白屏 -->
   <img src="https://raw.githubusercontent.com/namelesswwee/namelesswwee/main/1123.jpg" 
-       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" 
-       alt="Profile Background">
+       alt="Background" 
+       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; display: block;">
 
-  <!-- 2. 遮罩层：半透明黑色，让文字更清晰 -->
-  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.4);"></div>
+  <!-- 第 2 层：黑色遮罩 (z-index: 1) -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
 
-  <!-- 3. 内容层：文字内容，浮在最上层 -->
-  <div style="position: relative; z-index: 1; padding: 40px; color: white; text-align: center;">
-    <h1>Hi 👋, I'm 你的名字</h1>
-    <h3>一个热爱编程的开发者</h3>
+  <!-- 第 3 层：文字内容 (z-index: 2) -->
+  <!-- 使用 flex 布局确保垂直居中，防止文字被挤出视野 -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; padding: 20px; box-sizing: border-box; text-align: center;">
     
-    <p>
+    <h1 style="margin: 0 0 10px 0; font-size: 2.2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Hi 👋, I'm 你的名字</h1>
+    <h3 style="margin: 0 0 20px 0; font-weight: 400; opacity: 0.9;">一个热爱编程的开发者</h3>
+    
+    <p style="margin: 0 0 15px 0; line-height: 1.5; max-width: 80%;">
       这里写你的简介<br/>
       这里写你的技能<br/>
       这里写你的目标
     </p>
 
-    <p>
+    <p style="margin: 0; font-size: 0.95rem; opacity: 0.8;">
       💻 正在学习：Java / Python / 前端<br/>
       📫 邮箱：your@email.com
     </p>
+    
   </div>
-
 </div>
